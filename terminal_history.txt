@@ -1,0 +1,276 @@
+(base)
+peter@PLXPS13 MINGW64 ~
+$ conda activate dev
+(dev)
+peter@PLXPS13 MINGW64 ~
+$ cd FinTech_Workspace/
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace
+$ git clone https://github.com/plefebvre1/module_14_challenge.git
+Cloning into 'module_14_challenge'...
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (5/5), done.
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace
+$ cd module_14_challenge/
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Resources/
+        machine_learning_trading_bot.ipynb
+
+nothing added to commit but untracked files present (use "git add" to track)
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git add ~
+fatal: C:/Users/peter: 'C:/Users/peter' is outside repository at 'C:/Users/peter/FinTech_Workspace/module_14_challenge'
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Resources/
+        machine_learning_trading_bot.ipynb
+
+nothing added to commit but untracked files present (use "git add" to track)
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git add Resources/
+warning: CRLF will be replaced by LF in Resources/emerging_markets_ohlcv.csv.
+The file will have its original line endings in your working directory
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git add machine_learning_trading_bot.ipynb
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Resources/emerging_markets_ohlcv.csv
+        new file:   machine_learning_trading_bot.ipynb
+
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git commit -m 'Initial starter code'
+[main f1b11ad] Initial starter code
+ 2 files changed, 4953 insertions(+)
+ create mode 100644 Resources/emerging_markets_ohlcv.csv
+ create mode 100644 machine_learning_trading_bot.ipynb
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 35.60 KiB | 3.24 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/plefebvre1/module_14_challenge.git
+   60b5267..f1b11ad  main -> main
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   machine_learning_trading_bot.ipynb
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git add machine_learning_trading_bot.ipynb
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git commit -m 'Baseline performance established'
+[main b81aef6] Baseline performance established
+ 1 file changed, 3282 insertions(+), 51 deletions(-)
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 2.26 MiB | 3.91 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/plefebvre1/module_14_challenge.git
+   f1b11ad..b81aef6  main -> main
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        machine_learning_trading_bot-adjSMA.ipynb
+        machine_learning_trading_bot-adjtrainingsize.ipynb
+
+nothing added to commit but untracked files present (use "git add" to track)
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git add machine_learning_trading_bot-adjSMA.ipynb
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git add machine_learning_trading_bot-adjtrainingsize.ipynb
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   machine_learning_trading_bot-adjSMA.ipynb
+        new file:   machine_learning_trading_bot-adjtrainingsize.ipynb
+
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git commit -m 'Alternate models evaluated to tune SVC model'
+[main 96a5250] Alternate models evaluated to tune SVC model
+ 2 files changed, 7720 insertions(+)
+ create mode 100644 machine_learning_trading_bot-adjSMA.ipynb
+ create mode 100644 machine_learning_trading_bot-adjtrainingsize.ipynb
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 2.30 MiB | 3.54 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/plefebvre1/module_14_challenge.git
+   b81aef6..96a5250  main -> main
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ touch Images
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Images
+
+nothing added to commit but untracked files present (use "git add" to track)
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git add Images
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git commit -m 'Images folder initialized'
+[main fd51dbf] Images folder initialized
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Images
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 277 bytes | 277.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/plefebvre1/module_14_challenge.git
+   96a5250..fd51dbf  main -> main
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   machine_learning_trading_bot-adjSMA.ipynb
+        modified:   machine_learning_trading_bot-adjtrainingsize.ipynb
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git add machine_learning_trading_bot-adjSMA.ipynb
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git add machine_learning_trading_bot-adjtrainingsize.ipynb
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git commit -m 'Updated adjustments'
+[main 66c9852] Updated adjustments
+ 2 files changed, 350 deletions(-)
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 713 bytes | 713.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/plefebvre1/module_14_challenge.git
+   fd51dbf..66c9852  main -> main
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   machine_learning_trading_bot.ipynb
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git add machine_learning_trading_bot.ipynb
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git commit -m 'Alternate model evaluated and backtested'
+[main 9046beb] Alternate model evaluated and backtested
+ 1 file changed, 154 insertions(+), 22 deletions(-)
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 23.14 KiB | 296.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/plefebvre1/module_14_challenge.git
+   66c9852..9046beb  main -> main
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$ touch terminal_history.txt
+(dev)
+peter@PLXPS13 MINGW64 ~/FinTech_Workspace/module_14_challenge (main)
+$
